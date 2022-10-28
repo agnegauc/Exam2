@@ -9,13 +9,11 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
 
-// Input type in HTML was set to "text", I changed it to "number".
-
 document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault();
 
   const weightInKg = +document.querySelector("#search").value;
-  const weightInLb = +(weightInKg * 2.2046).toFixed(2); // Added a plus here to avoid trailing .00
+  const weightInLb = +(weightInKg * 2.2046).toFixed(2);
   const weightInG = +(weightInKg / 0.001).toFixed(2);
   const weightInOz = +(weightInKg * 35.274).toFixed(2);
   const displayResult = document.createElement("h2");

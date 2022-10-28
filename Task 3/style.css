@@ -62,11 +62,11 @@
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .userCard {
-  width: 20rem;
+  width: 21.6rem;
   border: 1px solid rgb(207, 207, 207);
   height: 30rem;
   font-size: 1.5rem;
@@ -79,4 +79,12 @@
 .userCard h4 {
   color:#666666;
   padding: 1rem
+}
+
+@media screen and (min-device-width: 768px) {
+  .userCard {
+    width: 14rem;
+    height: 20.5rem;
+    font-size: 1.2rem;
+  }
 }
