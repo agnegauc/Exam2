@@ -36,8 +36,6 @@ const getUserAverageAge = (users) => {
   return userAverageAge(userAgeList);
 };
 
-console.log(getUserAverageAge(users));
-
 const getUsersNames = (users) => {
   users.forEach((user) => {
     const name = user.name;
@@ -47,4 +45,5 @@ const getUsersNames = (users) => {
   return userNamesList;
 };
 
+console.log(getUserAverageAge(users));
 console.log(getUsersNames(users));
